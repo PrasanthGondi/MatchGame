@@ -1,4 +1,5 @@
 import './App.css'
+import Timer from './Timer'
 
 // These are the lists used in the application. You can move them to any component needed.
 const tabsList = [
@@ -247,6 +248,10 @@ const imagesList = [
 ]
 
 // Replace your code here
-const App = () => <div>Hello World</div>
+const App = () => (
+  <div className="bg1">
+    <Timer imagesList={imagesList} tabsList={tabsList} />
+  </div>
+)
 
 export default App
